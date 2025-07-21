@@ -22,13 +22,12 @@ app.use(express.urlencoded({extended:true}));
 
 
 const corsOptions = {
-    // origin: [
-    //     'http://localhost:3000', 
-    //     // 'http://zuitt-bootcamp-prod-495-8145-ortega.s3-website.us-east-1.amazonaws.com',
-    //     'https://zuitt-csp-3.vercel.app'
-    // ],
-    // credentials: true,
-     origin: '*',
+    origin: [
+        'http://localhost:3000',
+        'https://zuitt-csp-3.vercel.app',
+        'https://zuitt-csp-3-mjy5.vercel.app'
+    ],
+    credentials: true,
     optionsSuccessStatus: 200
 };
 
